@@ -1,0 +1,292 @@
+/* css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #222222;
+}
+
+.headerLink {
+    margin: 0.8em;
+    color: #222222;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .5rem;
+}
+
+.headerLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.headerIconContainer {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    cursor: pointer;
+}
+
+.headerIcon {
+    pointer-events: none;
+}
+
+.headerIconContainer:hover {
+    background-color: #EFF0F0;
+    cursor: pointer;
+}
+
+.headerIconLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+.logoSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    min-height: 92px;
+    max-height: 290px;
+    height: calc(100vh - 560px);
+}
+
+.logo {
+    object-fit: contain;
+}
+
+.searchModule {
+    padding: 20px;
+    max-height: 160px;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.searchBarTop {
+    display: flex;
+    margin-top: 6px;
+    flex-grow: 1;
+    width: 100%;
+    min-width: 336px;
+    max-width: 584px;
+    align-self: center;
+}
+
+.searchBar {
+    width: 100%;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 44px;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+}
+
+.searchBar:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.searchBar:focus-within {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.searchBarIcon {
+    margin: auto 1rem;
+    height: 70%;
+}
+
+.searchBarInput {
+    flex-grow: 1;
+    border: none;
+    height: 100%;
+    background-color: transparent;
+}
+
+.searchBarInput:focus {
+    outline: none;
+}
+
+.searchBarBot {
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+}
+
+.searchButton {
+    margin: .5rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    cursor: pointer;
+    color: #3c4043;
+}
+
+.searchButton:hover {
+    border-width: 1px;
+    border-style: outset;
+    border-color: rgb(204, 204, 204);
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+}
+
+.footerLeft {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    order: 1;
+}
+
+.footerMid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    order: 2;
+}
+
+.footerRight {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    order: 3;
+}
+
+.footerLink {
+    color: #70757a;
+    padding: 15px;
+}
+
+.carbonModule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.carbonIcon {
+    width: auto;
+    height: 14px;
+    margin-right: .6rem;
+}
+
+.carbonText {
+    color: #70757a;
+}
+
+@media only screen and (max-width: 1200px) {
+    footer {
+        justify-content: space-evenly;
+    }
+    .footerMid {
+        order: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .footerLeft {
+        order: 1;
+    }
+    .footerRight {
+        order: 2;
+    }
+}
