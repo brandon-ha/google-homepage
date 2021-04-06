@@ -208,9 +208,13 @@ header {
 }
 
 .searchButton:hover {
-    border-width: 1px;
-    border-style: outset;
     border-color: rgb(204, 204, 204);
+    outline: none;
+}
+
+.searchButton:active {
+    outline: none;
+    border-color: #5695FE;
 }
 
 .links {
